@@ -1,13 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  margin: 0 auto;
-  padding: 15px 20px;
+  padding: 15px 0;
   gap: 15px;
 
   & label {
@@ -16,55 +14,55 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-    display: block;
-    width: 100%;
-    padding: 11px 16px;
-    outline: none;
-    background: #F4F4F4;
-    border: 1px solid #C5C5C5;
-    border-radius: 6px;
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  outline: none;
+  background: #f4f4f4;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
 
-    &:focus {
-        border: 1px solid #4CC6F5;
-        background-color: #ffffff;
-    }
+  &:focus {
+    border: 1px solid #4cc6f5;
+    background-color: #ffffff;
+  }
 
-    &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.16px;
-        color: #A8A8A8;
-    }
-`;
-
-const Label = styled.span`
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7F8E9D;
-`;
-
-const Button = styled.button`
-    width: 100%;
-    height: 40px;
-    padding: 10px 16px;
+  &::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.16px;
+    color: #a8a8a8;
+  }
+`;
 
-    color: #FFFFFF;
-    background: #4CC6F5;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
+const Label = styled.span`
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7f8e9d;
+`;
 
-    &:hover {
-        background: #29ABDD;
-    }
+const Button = styled.button`
+  width: 100%;
+  height: 40px;
+  padding: 10px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.16px;
+
+  color: #ffffff;
+  background: #4cc6f5;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #29abdd;
+  }
 `;
 
 export { Input, Button, Form, Label };
