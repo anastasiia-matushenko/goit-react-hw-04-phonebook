@@ -55,18 +55,16 @@ export const App = () => {
     setContacts(state => state.filter(({ id }) => id !== contactId));
   };
 
-  const contactsList = filterContacts();
-  console.log('ContactsList', contactsList);
-  console.log('contactsState', contacts);
+  const contactsFilterList = filterContacts();
   return (
     <Container>
       <Title>Phonebook</Title>
       <ContactForm addContacts={addContacts} />
       <Subtitle>Contacts</Subtitle>
       <Filter value={filter} onChange={evt => setFilter(evt.target.value)} />
-      {contactsList.length > 0
+      {contactsFilterList.length > 0
         ? <ContactsList
-          contacts={contactsList}
+          contacts={contactsFilterList}
           deleteContact={deleteContact}
         />
         : <Message>❌ Your query did not find anything</Message>}
